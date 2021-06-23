@@ -1,0 +1,31 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/meprint/sunanlin_folder/deepfashion2/images/train2017/  # 128 images
+val: /home/meprint/sunanlin_folder/deepfashion2/images/val2017/  # 128 images
+
+# number of classes
+nc: 13
+
+# class names
+names: [ 'short_sleeved_shirt',
+'long_sleeved_shirt',
+'short_sleeved_outwear',
+'long_sleeved_outwear',
+'vest',
+'sling',
+'shorts',
+'trousers',
+'skirt',
+'short_sleeved_dress','long_sleeved_dress',
+'vest_dress',
+'sling_dress']
