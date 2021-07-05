@@ -1,4 +1,5 @@
 # deepfashion2-yolov5-trt-sever
+![image](succeed_find_the_obj.png)  
 ##这是一个服装检索的项目，使用的数据集是大型服装混合数据集deepfashion2，基于yolov5的backbone的特征图进行衣服图案相似性检索。<br>
 <br>项目阶段：<br>
 <br>一、训练yolov5并提取特征编码<br>
