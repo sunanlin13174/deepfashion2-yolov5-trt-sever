@@ -16,16 +16,17 @@
 使用的yolov5自身的特征向量，并未引入新的网络。输出结果会保存在runs/detect/exp...下面，查询准确率90%+<br>
 
 <br>第二阶段：<br>
-一个Flask服务器端，部署的代码在model_sever文件夹。不懂就问，欢迎star和留言。
+<br>一个Flask服务器端，部署的代码在model_sever文件夹。<br>
+<br>修改search_rank_5.py的参数，然后python运行即可，相信你看得懂。<br>
+<br>返回为gallery文件夹里面与query图片最相似的5张图片，不懂就问，欢迎star和留言。<br>
 
 
 <br>第三阶段：<br>
 
-
-
-
+<br>YOLOV5目前无法onnx-》engine，部分操作ops官方不支持，所以，可以使用https://github.com/wang-xinyu/tensorrtx.git的方法，<br>
+<br>他使用了trt的API搭建了网络，生成了engine，调用时可用python和C++。不过编译前记得修改yololayer.h和.cu的参数。<br>另外，我遇到了undefined reference to `nvinfer1::YoloPluginCreator::YoloPluginCreator()' 这样的坑，谁会的话可以帮帮我。<br>
 
 <br>第四阶段：<br>
-
+待写。。。
 
 
