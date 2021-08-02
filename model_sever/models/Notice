@@ -1,0 +1,2 @@
+当训练模型是，将yolo_train.py改为yolo.py
+当search_demo时， 保持现状，目的是返回向量的改为yolo.py，不返回向量的改为yolo_train.py
